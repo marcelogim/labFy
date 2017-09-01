@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import SideNav, { Nav, NavIcon, NavText } from 'react-sidenav';
 import SvgIcon from 'react-icons-kit';
-import Dashboard from '../../protected/Dashboard'
+
 
 import { ic_aspect_ratio } from 'react-icons-kit/md/ic_aspect_ratio';
 import { ic_business } from 'react-icons-kit/md/ic_business';
@@ -16,7 +16,7 @@ import { ic_gesture } from 'react-icons-kit/md/ic_gesture';
  
 export default class Dashboard extends Component {
 	 clickMe() {
-	<Redirect to='/Dashboard' /> 
+	
   }
   render () {	    
     return (
