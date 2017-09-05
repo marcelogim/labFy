@@ -1,17 +1,53 @@
-# Auth with React Router V4 and Firebase V3
-This is an example repo for authenticating with Firebase and React Router.
+## SB Admin v2.0 rewritten in React.js
 
-*Using React 15.4.0, React Router 4, and Firebase 3.6.1*
+[![Join the chat at https://gitter.im/start-react/sb-admin-react](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/start-react/sb-admin-react?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-#### Features:
-* Protected Routes with React Router
-* Register new users with Firebase
-* Add new users to ```/users``` in your Firebase database
-* Login/Logout Functionality
-* Simple Boostrap UI
+This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to React.js Theme based on [React Starter Kit](https://github.com/kriasoft/react-starter-kit) using ES6 & Webpack.
 
-#### Instructions:
-* Swap out the firebase config in ```config/constants``` with your own
-* ```npm install```
-* ```npm start```
-* Visit ```localhost:3000```
+Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).
+
+## [Demo](http://sb-admin-react.geekydev.com:3009/)
+
+## Installation
+####1. Clone this project or Download that ZIP file
+
+```sh
+$ git clone https://github.com/start-react/sb-admin-react.git
+```
+
+####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
+
+More details here
+https://nodejs.org/en/download/
+
+####3. On the command prompt run the following commands
+
+```sh
+$ cd `project-directory`
+```
+```sh
+$ npm install
+```
+```sh
+$ npm start
+```
+
+####4. To build
+```sh
+$ npm run build
+```
+
+####5. To clean up old build products
+```sh
+$ npm run clean
+```
+
+## Roadmap
+
+- Add sample AJAX calls (using Flux / Reflux) and make the components more modular
+- Lazy loading of Pages
+- MobX integration
+
+
+### Automation tools used
+- [Webpack](https://webpack.github.io/)
