@@ -143,6 +143,112 @@ function displayForms(props, context) {
                             <FormControl type="text" />
                          </div>
                     </div>
+                     <div className="row">
+                            <div className="col-lg-12">
+                              <PageHeader> </PageHeader>
+                            </div>
+                          </div>
+                     <div className="row">
+                      <div className="col-sm-12">
+                        <table
+                          className="table table-striped table-bordered table-hover dataTable no-footer"
+                          id="dataTables-example"
+                          role="grid"
+                          aria-describedby="dataTables-example_info"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="Rendering engine: activate to sort column descending"
+                                aria-sort="ascending"
+                                style={{ width: 265 }}
+                              >
+                              Preparo
+                              </th>
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="Browser: activate to sort column ascending"
+                                style={{ width: 321 }}
+                              >
+                              Colheita/Conserva
+                              </th>
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="Platform(s): activate to sort column ascending"
+                                style={{ width: 299 }}
+                              >
+                              Obs.
+                              </th>
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="Engine version: activate to sort column ascending"
+                                style={{ width: 231 }}
+                              >
+                              Resultados Alterados
+                              </th>
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="CSS grade: activate to sort column ascending"
+                                style={{ width: 180 }}
+                              >Esquema 1
+                              </th>
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="CSS grade: activate to sort column ascending"
+                                style={{ width: 180 }}
+                              >Esquema 2
+                              </th>
+                              <th
+
+                                tabIndex="0"
+                                aria-controls="dataTables-example"
+                                rowSpan="1"
+                                colSpan="1"
+                                aria-label="CSS grade: activate to sort column ascending"
+                                style={{ width: 180 }}
+                              >Interpretação
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="gradeA odd" role="row">
+                              <td className="sorting_1">Gecko</td>
+                              <td>Firefox 1.0</td>
+                              <td>Win 98+ / OSX.2+</td>
+                              <td className="center">1.7</td>
+                              <td className="center">A</td>
+                              <td className="center">xxx</td>
+                              <td className="center">zz</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
               </Panel>
             </div>
           </div>

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e660024e-5216-4010-b020-be98afd1f390" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labFyPrj/src/components/index.js" afterPath="$PROJECT_DIR$/labFyPrj/src/components/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js" afterPath="$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js" afterPath="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaPrincipalLab.js" afterPath="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaPrincipalLab.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="TelaExames.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="139" column="30" lean-forward="false" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
+            <state relative-caret-position="-1173">
+              <caret line="151" column="22" lean-forward="false" selection-start-line="151" selection-start-column="22" selection-end-line="250" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -500,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="139" column="30" lean-forward="false" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
+        <state relative-caret-position="-1173">
+          <caret line="151" column="22" lean-forward="false" selection-start-line="151" selection-start-column="22" selection-end-line="250" selection-end-column="26" />
           <folding />
         </state>
       </provider>
