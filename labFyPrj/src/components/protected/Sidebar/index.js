@@ -17,10 +17,10 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div className="navbar-default sidebar" style={{ marginLeft: '-70px' }} role="navigation">
+      <div className="navbar-default sidebar" style={{ marginLeft: '-20px' }} role="navigation">
         <div className="sidebar-nav navbar-collapse collapse">
           <ul className="nav in" id="side-menu">
-           
+
 
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
@@ -67,7 +67,7 @@ class Sidebar extends Component {
 
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/table'); }} >
-                <i className="fa fa-table fa-fw" /> &nbsp;Digitação/Conferência 
+                <i className="fa fa-table fa-fw" /> &nbsp;Digitação/Conferência
               </a>
             </li>
 
@@ -86,7 +86,7 @@ class Sidebar extends Component {
                 }); return false;
                 }}
               >
-                <i className="fa fa-edit fa-fw" />Assinatura Digital<span className="fa arrow" />
+                <i className="fa fa-edit fa-fw" /> Assinatura Digital<span className="fa arrow" />
               </a>
 
               <ul

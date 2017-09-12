@@ -18,10 +18,25 @@ import FormControlFeedback from 'react-bootstrap/lib/FormControlFeedback';
 import FormControlStatic from 'react-bootstrap/lib/FormControlStatic';
 import InputGroupAddon from 'react-bootstrap/lib/InputGroupAddon';
 
+class TelaExames extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-function displayForms(props, context) {
+  handleSubmit(e) {
+    e.preventDefault();
 
+    const formData = {};
+    for (const field in this.refs) {
+      formData[field] = this.refs[field].value;
+
+    }
+    console.log('-->', formData);
+  }
+
+  render() {
   return (
     <div>
       <div className="row">
@@ -29,7 +44,7 @@ function displayForms(props, context) {
           <h4></h4>
         </div>
       </div>
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
           <div className="row">
             <div className="col-lg-12">
               <Panel header={<span>Exames</span>} >
@@ -253,7 +268,7 @@ function displayForms(props, context) {
                         <div className="col-lg-5"/>
 
                         <div className="col-lg-1">
-                          <Button bsStyle="primary">Salvar</Button>
+                          <input type="submit" value="Submit"/>
                         </div>
                      </div>
               </Panel>
@@ -264,5 +279,6 @@ function displayForms(props, context) {
   );
 }
 
+}
 
-export default displayForms;
+export default TelaExames;
