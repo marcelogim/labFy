@@ -92,8 +92,7 @@ export default class App extends Component {
                 <Route path='/' exact component={Home} />
                 <PublicRoute authed={this.state.authed} path='/login' component={Login} />
                 <PublicRoute authed={this.state.authed} path='/register' component={Register} />
-                <PrivateRoute authed={this.state.authed} path='/dashboard' component={Dashboard} />
-				<PrivateRoute authed={this.state.authed} path='/TelaPrincipalLab' component={TelaPrincipalLab} />
+             	<PrivateRoute authed={this.state.authed} path='/TelaPrincipalLab' component={TelaPrincipalLab} />
 
                 <Route render={() => <h3>No Match</h3>} />
               </Switch>
