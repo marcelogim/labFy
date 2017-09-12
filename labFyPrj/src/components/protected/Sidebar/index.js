@@ -86,7 +86,7 @@ class Sidebar extends Component {
                 }); return false;
                 }}
               >
-                <i className="fa fa-edit fa-fw" /> Assinatura Digital<span className="fa arrow" />
+                <i className="fa fa-edit fa-fw" />Assinatura Digital<span className="fa arrow" />
               </a>
 
               <ul

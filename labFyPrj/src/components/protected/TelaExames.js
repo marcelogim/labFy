@@ -26,7 +26,7 @@ function displayForms(props, context) {
     <div>
       <div className="row">
         <div className="col-lg-12">
-          <PageHeader> </PageHeader>
+          <h4></h4>
         </div>
       </div>
       <Form>
@@ -249,6 +249,13 @@ function displayForms(props, context) {
                         </table>
                       </div>
                     </div>
+                     <div className="row">
+                        <div className="col-lg-5"/>
+
+                        <div className="col-lg-1">
+                          <Button bsStyle="primary">Salvar</Button>
+                        </div>
+                     </div>
               </Panel>
             </div>
           </div>
