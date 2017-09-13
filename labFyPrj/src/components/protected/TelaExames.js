@@ -17,7 +17,7 @@ import '../../index.css';
 import FormControlFeedback from 'react-bootstrap/lib/FormControlFeedback';
 import FormControlStatic from 'react-bootstrap/lib/FormControlStatic';
 import InputGroupAddon from 'react-bootstrap/lib/InputGroupAddon';
-
+import ReactDom from 'react-dom';
 class TelaExames extends React.Component {
 
   constructor(props) {
@@ -26,14 +26,16 @@ class TelaExames extends React.Component {
   }
 
   handleSubmit(e) {
+
     e.preventDefault();
 
     const formData = {};
     for (const field in this.refs) {
-      formData[field] = this.refs[field].value;
+     console.log('-->',  ReactDom.findDOMNode(this.refs[field]).value);
+
 
     }
-    console.log('-->', formData);
+
   }
 
   render() {
@@ -51,16 +53,17 @@ class TelaExames extends React.Component {
                 <div className="row">
                   <div className="col-lg-2">
                      <ControlLabel> Código </ControlLabel>
-                     <FormControl type="text" />
+                     <FormControl type="text" ref="codigo" />
                   </div>
                   <div className="col-lg-4">
-                      <Checkbox> Permissão Especial </Checkbox>
+
+                          <Checkbox ref="id" ref={(input) => { this.textInput = input; }}  > Permissão Especial</Checkbox>
                    </div>
                   <div className="col-lg-3">
-                        <Checkbox> Bloqueado </Checkbox>
+                          <input type="checkbox" name="bloqueado" ref="bloqueado" defaultChecked={false} /> Bloqueado
                   </div>
                   <div className="col-lg-3">
-                        <Checkbox> Bloqueado Temp. </Checkbox>
+                          <input type="checkbox" name="bloqueadoTemp" ref="bloqueadoTemp" defaultChecked={false} /> Bloqueado Temp.
                         <FormControl componentClass="select" placeholder="select">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -73,7 +76,7 @@ class TelaExames extends React.Component {
                 <div className="row">
                   <div className="col-lg-6">
                      <ControlLabel> Descrição </ControlLabel>
-                     <FormControl type="text" />
+                     <FormControl type="text" ref="descricao" />
                   </div>
                    <div className="col-lg-1"/>
                    <div className="col-lg-6">
@@ -268,7 +271,7 @@ class TelaExames extends React.Component {
                         <div className="col-lg-5"/>
 
                         <div className="col-lg-1">
-                          <input type="submit" value="Submit"/>
+                          <Button bsStyle="primary" label="Salvar" id="salvar" type="submit" active>Salvar</Button>
                         </div>
                      </div>
               </Panel>
