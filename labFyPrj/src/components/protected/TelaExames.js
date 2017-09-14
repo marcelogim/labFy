@@ -18,11 +18,17 @@ import FormControlFeedback from 'react-bootstrap/lib/FormControlFeedback';
 import FormControlStatic from 'react-bootstrap/lib/FormControlStatic';
 import InputGroupAddon from 'react-bootstrap/lib/InputGroupAddon';
 import ReactDom from 'react-dom';
+let permEspecial = null;
+import * as firebase from 'firebase';
+
+
 class TelaExames extends React.Component {
+
 
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
   handleSubmit(e) {
@@ -31,14 +37,19 @@ class TelaExames extends React.Component {
 
     const formData = {};
     for (const field in this.refs) {
-     console.log('-->',  ReactDom.findDOMNode(this.refs[field]).value);
-
-
+        console.log('-->',  ReactDom.findDOMNode(this.refs[field]).value);
     }
-
   }
 
+   onChangeCheckboxPerm(event){
+
+        permEspecial = event.target.checked;
+
+   }
+
   render() {
+
+   
   return (
     <div>
       <div className="row">
@@ -56,8 +67,7 @@ class TelaExames extends React.Component {
                      <FormControl type="text" ref="codigo" />
                   </div>
                   <div className="col-lg-4">
-
-                          <Checkbox ref="id" ref={(input) => { this.textInput = input; }}  > Permissão Especial</Checkbox>
+                       <input type="checkbox"  name="permEspecial" onChange={this.onChangeCheckboxPerm}/>Permissão Especial
                    </div>
                   <div className="col-lg-3">
                           <input type="checkbox" name="bloqueado" ref="bloqueado" defaultChecked={false} /> Bloqueado
