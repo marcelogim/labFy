@@ -18,6 +18,8 @@ import FormControlFeedback from 'react-bootstrap/lib/FormControlFeedback';
 import FormControlStatic from 'react-bootstrap/lib/FormControlStatic';
 import InputGroupAddon from 'react-bootstrap/lib/InputGroupAddon';
 import ReactDom from 'react-dom';
+import { saveExames } from '../../helpers/writeDataFireBase'
+
 let permEspecial = null;
 import * as firebase from 'firebase';
 
@@ -34,11 +36,14 @@ class TelaExames extends React.Component {
   handleSubmit(e) {
 
     e.preventDefault();
+ console.log('-->',  ReactDom.findDOMNode(this.refs['codigo']).value);
+//    const formData = {};
+//    for (const field in this.refs) {
+//      //  console.log('-->',  ReactDom.findDOMNode(this.refs[field]).value);
+//
+//    }
 
-    const formData = {};
-    for (const field in this.refs) {
-        console.log('-->',  ReactDom.findDOMNode(this.refs[field]).value);
-    }
+      saveExames(ReactDom.findDOMNode(this.refs['codigo']).value);
   }
 
    onChangeCheckboxPerm(event){
@@ -49,7 +54,7 @@ class TelaExames extends React.Component {
 
   render() {
 
-   
+
   return (
     <div>
       <div className="row">
