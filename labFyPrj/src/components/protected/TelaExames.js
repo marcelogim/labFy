@@ -2,27 +2,16 @@ import React  from 'react';
 import {
   Panel,
   Button,
-  Col,
   PageHeader,
   ControlLabel,
   FormControl,
-  HelpBlock,
-  FormGroup,
   Checkbox,
   Form,
-  Radio,
-  InputGroup,
-  Glyphicon } from 'react-bootstrap';
+ } from 'react-bootstrap';
 import '../../index.css';
-import FormControlFeedback from 'react-bootstrap/lib/FormControlFeedback';
-import FormControlStatic from 'react-bootstrap/lib/FormControlStatic';
-import InputGroupAddon from 'react-bootstrap/lib/InputGroupAddon';
 import ReactDom from 'react-dom';
 import { saveExames } from '../../helpers/writeDataFireBase'
-
 let permEspecial = null;
-import * as firebase from 'firebase';
-
 
 class TelaExames extends React.Component {
 
