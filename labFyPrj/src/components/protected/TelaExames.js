@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactConfirmAlert, { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
 
 import {
   Panel,
@@ -29,14 +31,16 @@ class TelaExames extends React.Component {
   handleSubmit(e) {
 
     e.preventDefault();
- console.log('-->',  ReactDom.findDOMNode(this.refs['codigo']).value);
-//    const formData = {};
-//    for (const field in this.refs) {
-//      //  console.log('-->',  ReactDom.findDOMNode(this.refs[field]).value);
-//
-//    }
+    const formData = {};
+    for (const field in this.refs) {
+      formData[field] = this.refs[field].value;
+    }
+    saveExames(ReactDom.findDOMNode(this.refs['codigo']).value, formData);
 
-      saveExames(ReactDom.findDOMNode(this.refs['codigo']).value);
+     for (const field in this.refs) {
+        this.refs[field].value = "";
+     }
+     alert("Dados Salvos!!!")
   }
 
    onChangeCheckboxPerm(event){
@@ -65,45 +69,44 @@ class TelaExames extends React.Component {
                <div className="row">
                  <div className="col-lg-2">
                      <ControlLabel> Código </ControlLabel>
-                     <FormControl type="text" ref="codigo" />
-
+                      <input type="text" className="form-control"  ref="codigo" ></input>
                   </div>
                   <div className="col-lg-4">
                        <input type="checkbox"  name="permEspecial" onChange={this.onChangeCheckboxPerm}/>Permissão Especial
                    </div>
                   <div className="col-lg-3">
-                          <input type="checkbox" name="bloqueado" ref="bloqueado" defaultChecked={false} /> Bloqueado
+                       <input type="checkbox" name="bloqueado" ref="bloqueado" defaultChecked={false} /> Bloqueado
                   </div>
                   <div className="col-lg-3">
-                          <input type="checkbox" name="bloqueadoTemp" ref="bloqueadoTemp" defaultChecked={false} /> Bloqueado Temp.
-                        <FormControl componentClass="select" placeholder="select">
+                         <input type="checkbox" name="bloqueadoTemp" ref="bloqueadoTemp" defaultChecked={false} /> Bloqueado Temp.
+                         <select name="select" className="form-control" ref="tempo" >
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                          </FormControl>
+                          </select>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-lg-6">
                      <ControlLabel> Descrição </ControlLabel>
-                     <FormControl type="text" ref="descricao" />
+                      <input type="text" className="form-control" ref="descricao" />
                   </div>
                    <div className="col-lg-1"/>
                    <div className="col-lg-6">
                       <ControlLabel> Sinônimos </ControlLabel>
-                      <FormControl type="text" />
+                       <input type="text" className="form-control" ref="sinonimos"  />
                     </div>
                  </div>
                     <div className="row">
                       <div className="col-lg-6">
                          <ControlLabel> Material </ControlLabel>
-                         <FormControl type="text" />
+                          <input type="text" className="form-control" ref="material"  />
                       </div>
                       <div className="col-lg-1">
                          <ControlLabel> Vol. </ControlLabel>
-                         <FormControl type="text" />
+                          <input type="text" className="form-control" ref="vol"  />
                       </div>
                       <div className="col-lg-1">
                         <Checkbox> dl </Checkbox>
@@ -111,31 +114,31 @@ class TelaExames extends React.Component {
                       </div>
                       <div className="col-lg-4">
                          <ControlLabel> Método. </ControlLabel>
-                         <FormControl type="text" />
+                          <input type="text" className="form-control" ref="metodo" />
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-lg-6">
                          <ControlLabel> Bancada </ControlLabel>
-                         <FormControl type="text" />
+                          <input type="text" className="form-control" ref="bancada" />
                       </div>
                        <div className="col-lg-1"/>
                        <div className="col-lg-6">
                           <ControlLabel> Aparelho </ControlLabel>
-                          <FormControl type="text" />
+                           <input type="text" className="form-control" ref="aparelho"  />
                         </div>
                  </div>
                   <div className="row">
                        <div className="col-lg-6">
                           <ControlLabel> Lab. Apoio </ControlLabel>
-                          <FormControl type="text" />
+                           <input type="text" className="form-control" ref="labApoio" />
                        </div>
                        <div className="col-lg-3">
                           <ControlLabel> Sexo </ControlLabel>
-                          <FormControl componentClass="select" placeholder="select">
+                           <select name="select" className="form-control" ref="sexo" >
                                <option value="1">Masculino</option>
                                <option value="2">Feminino</option>
-                           </FormControl>
+                           </select>
                        </div>
                         <div className="col-lg-1"/>
                        <div className="col-lg-3">
@@ -145,32 +148,32 @@ class TelaExames extends React.Component {
                     <div className="row">
                         <div className="col-lg-2">
                            <ControlLabel> Dias de Entrega </ControlLabel>
-                           <FormControl type="text" />
+                            <input type="text" className="form-control" ref="diasEntrega" />
                         </div>
                         <div className="col-lg-4">
                            <ControlLabel> Tubo </ControlLabel>
-                               <FormControl type="text" />
+                                <input type="text" className="form-control" ref="tubo" />
                         </div>
                         <div className="col-lg-3">
                              <Checkbox> Separado </Checkbox>
                         </div>
                         <div className="col-lg-3">
                             <ControlLabel> Quantidade de Etiquetas </ControlLabel>
-                            <FormControl type="text" />
+                             <input type="text" className="form-control" ref="qtdEtiquetas" />
                          </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
                            <ControlLabel> Tipo Observ. </ControlLabel>
-                           <FormControl type="text" />
+                            <input type="text" className="form-control" ref="tipoObs"  />
                         </div>
                         <div className="col-lg-3">
                            <ControlLabel> Qtd. Padrão </ControlLabel>
-                           <FormControl type="text" />
+                            <input type="text" className="form-control" />
                         </div>
                         <div className="col-lg-3">
                             <ControlLabel> Custo </ControlLabel>
-                            <FormControl type="text" />
+                             <input type="text" className="form-control" ref="custo" />
                          </div>
                     </div>
                      <div className="row">
@@ -184,10 +187,10 @@ class TelaExames extends React.Component {
                                    <Tab eventKey={1} title="Preparo">
                                      <div className="col-lg-6">
                                          <ControlLabel > Modo de Preparo </ControlLabel>
-                                         <FormControl componentClass="select" placeholder="select" >
+                                      <select name="select" className="form-control"   ref="modoPreparo" >
                                               <option value="1"> Padrão </option>
                                               <option value="2"> </option>
-                                          </FormControl>
+                                       </select>
                                       </div>
                                       <div className="col-lg-12"/>
                                       <div className="col-lg-12">
@@ -220,7 +223,7 @@ class TelaExames extends React.Component {
                      <div className="row">
                         <div className="col-lg-5"/>
                         <div className="col-lg-1">
-                          <Button bsStyle="primary" label="Salvar" id="salvar" type="submit" active>Salvar</Button>
+                          <Button bsStyle="primary" label="Salvar" id="salvar" type="submit"> Salvar </Button>
                         </div>
                      </div>
               </Panel>
