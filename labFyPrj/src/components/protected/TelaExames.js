@@ -172,11 +172,11 @@ class TelaExames extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                           <ControlLabel> Tipo Observ. </ControlLabel>
+                           <ControlLabel> Tipo Observação </ControlLabel>
                             <input type="text" className="form-control" ref="tipoObs"  />
                         </div>
                         <div className="col-lg-3">
-                           <ControlLabel> Qtd. Padrão </ControlLabel>
+                           <ControlLabel> Quantidade Padrão </ControlLabel>
                             <input type="text" className="form-control" />
                         </div>
                         <div className="col-lg-3">
