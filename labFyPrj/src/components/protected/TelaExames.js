@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactConfirmAlert, { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
-
 import {
   Panel,
   Button,
@@ -12,6 +11,8 @@ import {
   Form,
  } from 'react-bootstrap';
 import '../../index.css';
+import '../../../node_modules/font-awesome/css/font-awesome.css';
+
 import ReactDom from 'react-dom';
 import { saveExames } from '../../helpers/writeDataFireBase';
 let permEspecial = null;
@@ -65,7 +66,14 @@ class TelaExames extends React.Component {
       <Form onSubmit={this.handleSubmit}>
           <div className="row">
             <div className="col-lg-12">
-              <Panel header={<span>Exames </span>} >
+
+              <Panel header={<span>Exames
+              <div className="row">
+               <div className="col-lg-9"/>
+                 <div className="col-lg-3">
+                    <FormControl  type="text" placeholder="Busca de Exames" className="form-control-search search-input-box"/>
+                  </div>
+               </div></span> }>
                <div className="row">
                  <div className="col-lg-2">
                      <ControlLabel> Código </ControlLabel>
