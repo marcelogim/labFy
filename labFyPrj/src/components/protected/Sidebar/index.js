@@ -26,6 +26,7 @@ class Sidebar extends Component {
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
                 <i className="fa fa-dashboard fa-fw" /> &nbsp;Exames
               </a>
+
             </li>
 
             <li className={classNames({ active: !this.state.chartsElementsCollapsed })}>

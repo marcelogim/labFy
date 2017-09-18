@@ -1,4 +1,5 @@
-import React  from 'react';
+import React, { Component } from 'react';
+
 import {
   Panel,
   Button,
@@ -10,8 +11,11 @@ import {
  } from 'react-bootstrap';
 import '../../index.css';
 import ReactDom from 'react-dom';
-import { saveExames } from '../../helpers/writeDataFireBase'
+import { saveExames } from '../../helpers/writeDataFireBase';
 let permEspecial = null;
+import { Tabs, Tab } from 'react-bootstrap';
+
+
 
 class TelaExames extends React.Component {
 
@@ -41,6 +45,8 @@ class TelaExames extends React.Component {
 
    }
 
+
+
   render() {
 
 
@@ -49,16 +55,18 @@ class TelaExames extends React.Component {
       <div className="row">
         <div className="col-lg-12">
           <h4></h4>
+
         </div>
       </div>
       <Form onSubmit={this.handleSubmit}>
           <div className="row">
             <div className="col-lg-12">
-              <Panel header={<span>Exames</span>} >
-                <div className="row">
-                  <div className="col-lg-2">
+              <Panel header={<span>Exames </span>} >
+               <div className="row">
+                 <div className="col-lg-2">
                      <ControlLabel> Código </ControlLabel>
                      <FormControl type="text" ref="codigo" />
+
                   </div>
                   <div className="col-lg-4">
                        <input type="checkbox"  name="permEspecial" onChange={this.onChangeCheckboxPerm}/>Permissão Especial
@@ -171,109 +179,46 @@ class TelaExames extends React.Component {
                             </div>
                           </div>
                      <div className="row">
-                      <div className="col-sm-12">
-                        <table
-                          className="table table-striped table-bordered table-hover dataTable no-footer"
-                          id="dataTables-example"
-                          role="grid"
-                          aria-describedby="dataTables-example_info"
-                        >
-                          <thead>
-                            <tr role="row">
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="Rendering engine: activate to sort column descending"
-                                aria-sort="ascending"
-                                style={{ width: 265 }}
-                              >
-                              Preparo
-                              </th>
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="Browser: activate to sort column ascending"
-                                style={{ width: 321 }}
-                              >
-                              Colheita/Conserva
-                              </th>
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="Platform(s): activate to sort column ascending"
-                                style={{ width: 299 }}
-                              >
-                              Obs.
-                              </th>
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="Engine version: activate to sort column ascending"
-                                style={{ width: 231 }}
-                              >
-                              Resultados Alterados
-                              </th>
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="CSS grade: activate to sort column ascending"
-                                style={{ width: 180 }}
-                              >Esquema 1
-                              </th>
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="CSS grade: activate to sort column ascending"
-                                style={{ width: 180 }}
-                              >Esquema 2
-                              </th>
-                              <th
-
-                                tabIndex="0"
-                                aria-controls="dataTables-example"
-                                rowSpan="1"
-                                colSpan="1"
-                                aria-label="CSS grade: activate to sort column ascending"
-                                style={{ width: 180 }}
-                              >Interpretação
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr className="gradeA odd" role="row">
-                              <td className="sorting_1">Gecko</td>
-                              <td>Firefox 1.0</td>
-                              <td>Win 98+ / OSX.2+</td>
-                              <td className="center">1.7</td>
-                              <td className="center">A</td>
-                              <td className="center">xxx</td>
-                              <td className="center">zz</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div className="col-lg-12">
+                            <Tabs id="controlled-tab-example">
+                                   <Tab eventKey={1} title="Preparo">
+                                     <div className="col-lg-6">
+                                         <ControlLabel > Modo de Preparo </ControlLabel>
+                                         <FormControl componentClass="select" placeholder="select" >
+                                              <option value="1"> Padrão </option>
+                                              <option value="2"> </option>
+                                          </FormControl>
+                                      </div>
+                                      <div className="col-lg-12"/>
+                                      <div className="col-lg-12">
+                                         <textarea className="form-control" rows="6" ref="preparo" ></textarea>
+                                      </div>
+                                   </Tab>
+                                   <Tab eventKey={2} title=" Colheita/Conserva">
+                                        <textarea className="form-control" rows="6" ref="colheitaCons" ></textarea>
+                                   </Tab>
+                                   <Tab eventKey={3} title="Obs.">
+                                        <textarea className="form-control" rows="6" ref="obs" ></textarea>
+                                   </Tab>
+                                   <Tab eventKey={4} title="Resultados Alterados">
+                                        <textarea className="form-control" rows="6" ref="resultAlter" ></textarea>
+                                   </Tab>
+                                   <Tab eventKey={5} title="Esquema 1">
+                                        <textarea className="form-control" rows="6" ref="esquema1" ></textarea>
+                                   </Tab>
+                                   <Tab eventKey={6} title="Esquema 2">
+                                        <textarea className="form-control" rows="6" ref="esquema2" ></textarea>
+                                   </Tab>
+                            </Tabs>
                       </div>
                     </div>
                      <div className="row">
+                        <div className="col-lg-12">
+                          <PageHeader> </PageHeader>
+                        </div>
+                      </div>
+                     <div className="row">
                         <div className="col-lg-5"/>
-
                         <div className="col-lg-1">
                           <Button bsStyle="primary" label="Salvar" id="salvar" type="submit" active>Salvar</Button>
                         </div>
