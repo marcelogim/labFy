@@ -71,7 +71,7 @@ class TelaExames extends React.Component {
               <div className="row">
                <div className="col-lg-9"/>
                  <div className="col-lg-3">
-                    <FormControl  type="text" placeholder="Busca de Exames" className="form-control-search search-input-box"/>
+                    <FormControl  type="text" placeholder="Busca de Exames..." className="form-control-search search-input-box"/>
                   </div>
                </div></span> }>
                <div className="row">
