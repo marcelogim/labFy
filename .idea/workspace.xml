@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e660024e-5216-4010-b020-be98afd1f390" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js" afterPath="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js" afterPath="$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,31 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TelaExames.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TelaExames.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="73" column="77" lean-forward="false" selection-start-line="73" selection-start-column="77" selection-end-line="73" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/bootstrap-social/assets/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="2599" column="18" lean-forward="false" selection-start-line="2599" selection-start-column="12" selection-end-line="2599" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="react-confirm-alert.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/react-confirm-alert/src/react-confirm-alert.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="98" column="11" lean-forward="false" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+            <state relative-caret-position="-1649">
+              <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -47,58 +27,38 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="193">
+              <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/react-scripts/template/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/src/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="143" column="11" lean-forward="false" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/Dashboard.js">
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labFyPrj/src/config/constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="12" />
+              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/jspm/docs/_book/gitbook/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="8" column="10900" lean-forward="false" selection-start-line="8" selection-start-column="10900" selection-end-line="8" selection-end-column="10900" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/font-awesome/css/font-awesome.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="3" column="9817" lean-forward="false" selection-start-line="3" selection-start-column="9805" selection-end-line="3" selection-end-column="9817" />
               <folding />
             </state>
           </provider>
@@ -108,14 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>App</find>
-      <find>TelaPrincipalLab</find>
-      <find>this.setState({ chartsElementsCollapsed: !this.state.chartsElementsCollapsed });</find>
-      <find>analytics</find>
-      <find>children</find>
-      <find>Header</find>
-      <find>wrapper</find>
-      <find>nav</find>
       <find>pane</find>
       <find>class=</find>
       <find>fa arrow</find>
@@ -124,7 +76,6 @@
       <find>classNames</find>
       <find>navbar</find>
       <find>classNamess</find>
-      <find>fa-dashboard</find>
       <find>className=&quot;sorting&quot;</find>
       <find>firebase</find>
       <find>config</find>
@@ -134,6 +85,19 @@
       <find>form-control</find>
       <find>sexo</find>
       <find>sear</find>
+      <find>fa-bar-chart-o</find>
+      <find>fa-dashboard</find>
+      <find>pers</find>
+      <find>a-dig</find>
+      <find>print</find>
+      <find>fi</find>
+      <find>dolar</find>
+      <find>fatura</find>
+      <find>hand</find>
+      <find>qtd</find>
+      <find>entre</find>
+      <find>paper</find>
+      <find>confe</find>
     </findStrings>
     <replaceStrings>
       <replace>TelaInicialLab</replace>
@@ -167,11 +131,11 @@
         <option value="$PROJECT_DIR$/labFyPrj/src/index.css" />
         <option value="$PROJECT_DIR$/labFyPrj/src/components/index.js" />
         <option value="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaPrincipalLab.js" />
-        <option value="$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js" />
         <option value="$PROJECT_DIR$/labFyPrj/src/helpers/writeDataFireBase.js" />
         <option value="$PROJECT_DIR$/labFyPrj/node_modules/react-scripts/template/public/index.html" />
         <option value="$PROJECT_DIR$/labFyPrj/public/index.html" />
         <option value="$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js" />
+        <option value="$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js" />
       </list>
     </option>
   </component>
@@ -226,15 +190,7 @@
               <item name="labFy" type="462c0819:PsiDirectoryNode" />
               <item name="labFyPrj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="labFy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labFy" type="462c0819:PsiDirectoryNode" />
-              <item name="labFyPrj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,7 +199,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/react/teste4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -362,6 +318,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -402,21 +359,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/jspm/docs/_book/gitbook/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -538,14 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/jspm/docs/_book/gitbook/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10912" lean-forward="false" selection-start-line="8" selection-start-column="10900" selection-end-line="8" selection-end-column="10912" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -572,13 +506,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labFyPrj/src/config/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -617,14 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -682,10 +601,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="814" column="1" lean-forward="false" selection-start-line="814" selection-start-column="1" selection-end-line="814" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/jspm/docs/_book/gitbook/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="8" column="10900" lean-forward="false" selection-start-line="8" selection-start-column="10900" selection-end-line="8" selection-end-column="10900" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/TelaExames.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="73" column="77" lean-forward="false" selection-start-line="73" selection-start-column="77" selection-end-line="73" selection-end-column="77" />
+        <state relative-caret-position="-1649">
+          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labFyPrj/node_modules/font-awesome/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="3" column="9817" lean-forward="false" selection-start-line="3" selection-start-column="9805" selection-end-line="3" selection-end-column="9817" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labFyPrj/src/components/protected/Sidebar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labFyPrj/src/config/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="38" />
           <folding />
         </state>
       </provider>

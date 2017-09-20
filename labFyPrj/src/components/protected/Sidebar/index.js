@@ -24,7 +24,7 @@ class Sidebar extends Component {
 
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
-                <i className="fa fa-dashboard fa-fw" /> &nbsp;Exames
+                <i className="fa fa-tablet fa-fw" /> &nbsp;Exames
               </a>
 
             </li>
@@ -38,7 +38,7 @@ class Sidebar extends Component {
                   return false;
                 }}
               >
-                <i className="fa fa-bar-chart-o fa-fw" /> &nbsp;Pacientes
+                <i className="fa fa-inbox fa-fw" /> &nbsp;Pacientes
                 <span className="fa arrow" />
               </a>
               <ul
@@ -68,13 +68,13 @@ class Sidebar extends Component {
 
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/table'); }} >
-                <i className="fa fa-table fa-fw" /> &nbsp;Digitação/Conferência
+                <i className="fa fa-paperclip fa-fw" /> &nbsp;Digitação/Conferência
               </a>
             </li>
 
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/forms'); }} >
-                <i className="fa fa-table fa-fw" /> &nbsp;Impressão
+                <i className="fa fa-print fa-fw" /> &nbsp;Impressão
               </a>
             </li>
 
@@ -143,8 +143,7 @@ class Sidebar extends Component {
                   return false;
                 }}
               >
-                <i className="fa fa-sitemap fa-fw" />
-                &nbsp;Entrega
+                <i className="fa fa-hand-o-right fa-fw" />
                 &nbsp;Entrega
                 <span className="fa arrow" />
               </a>
@@ -208,7 +207,7 @@ class Sidebar extends Component {
                   return false;
                 }}
               >
-                <i className="fa fa-files-o fa-fw" />
+                <i className="fa fa-dollar fa-fw" />
                 &nbsp;Faturamento
                 <span className="fa arrow" />
               </a>
